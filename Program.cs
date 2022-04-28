@@ -42,11 +42,11 @@ namespace toucher_couler
                 Console.WriteLine($"Bonjour {nom}, vous allez commencer une partie de touché-coulé !!\n");
                 Console.WriteLine("Vous allez encoder vos emplacements de bateau, appuie sur ENTER pour passer a la suite\n");
                 Console.ReadLine();
-                placementBateauUti(bat_uti);
+                placementBateauUti(bat_uti, plan_jeu_ordi);
                 Console.Clear();
                 Console.WriteLine("Plusieurs navire ennemi on été détecté !!, êtes-vous prêt à les détruire");
                 Console.ReadLine();
-                placementBateauordi(bat_ordi);
+                placementBateauordi(bat_ordi, plan_jeu_ordi);
 
 
                 do
@@ -72,7 +72,7 @@ namespace toucher_couler
                     {
                         Console.WriteLine("Voici l'avancemnt du jeu\n");
                         Affiche(plan_jeu_ordi);
-                        Console.WriteLine("\nPasser à l'attaque");
+                        Console.WriteLine("\nAppuyer sur ENTER passer à l'attaque");
                         Console.ReadLine();
                         Console.Clear();
                     }
@@ -214,7 +214,7 @@ namespace toucher_couler
         //-----------------------------------------------------------------------------------------------
 
         //-------------------------placement bateau utilisateur-------------------------
-        static void placementBateauUti(string[,] bat_uti)
+        static void placementBateauUti(string[,] bat_uti, string[,] plan_jeu_ordi)
         {
             string[] t = { "Porte-Avion (5 cases)", "Croisseur (4 cases)", "1 Sous-Marin (3 cases)", "2 Sous-Marin (3 cases)", "torpilleur (2 cases)"};
             int[] t2 = { 5, 4, 3, 3, 2 };
@@ -246,7 +246,7 @@ namespace toucher_couler
                 else
                 {
                     direction(Ligne, NbrColonne, out bas, out haut, out gauche, out droite, nbrCase, bat_uti);
-                    encodageordi(bas, haut, gauche, droite, nbrCase, Ligne, NbrColonne, bat_uti, out ok, user);
+                    encodageordi(bas, haut, gauche, droite, nbrCase, Ligne, NbrColonne, bat_uti, out ok, user, plan_jeu_ordi);
                 }
             }
         }
@@ -254,7 +254,7 @@ namespace toucher_couler
 
 
         //-------------------------placement bateau ordi--------------------------------------------------------------------------------------------
-        static void placementBateauordi(string[,] bat_ordi)
+        static void placementBateauordi(string[,] bat_ordi, string[,] plan_jeu_ordi)
         {
             {
                 Random Rligne = new Random();
@@ -278,7 +278,7 @@ namespace toucher_couler
                     if (bat_ordi[Ligne, NbrColonne] == " O")
                     {
                         direction(Ligne, NbrColonne, out bas, out haut, out gauche, out droite, nbrCase, bat_ordi);
-                        encodageordi(bas, haut, gauche, droite, nbrCase, Ligne, NbrColonne, bat_ordi, out ok, user);
+                        encodageordi(bas, haut, gauche, droite, nbrCase, Ligne, NbrColonne, bat_ordi, out ok, user, plan_jeu_ordi);
                     }
 
                 } while (!ok);
@@ -293,7 +293,7 @@ namespace toucher_couler
                     if (bat_ordi[Ligne, NbrColonne] == " O")
                     {
                         direction(Ligne, NbrColonne, out bas, out haut, out gauche, out droite, nbrCase, bat_ordi);
-                        encodageordi(bas, haut, gauche, droite, nbrCase, Ligne, NbrColonne, bat_ordi, out ok, user);
+                        encodageordi(bas, haut, gauche, droite, nbrCase, Ligne, NbrColonne, bat_ordi, out ok, user, plan_jeu_ordi);
                     }
 
                 } while (!ok);
@@ -310,7 +310,7 @@ namespace toucher_couler
                         if (bat_ordi[Ligne, NbrColonne] == " O")
                         {
                             direction(Ligne, NbrColonne, out bas, out haut, out gauche, out droite, nbrCase, bat_ordi);
-                            encodageordi(bas, haut, gauche, droite, nbrCase, Ligne, NbrColonne, bat_ordi, out ok, user);
+                            encodageordi(bas, haut, gauche, droite, nbrCase, Ligne, NbrColonne, bat_ordi, out ok, user, plan_jeu_ordi);
                         }
                     } while (!ok);
                 }
@@ -326,7 +326,7 @@ namespace toucher_couler
                     if (bat_ordi[Ligne, NbrColonne] == " O")
                     {
                         direction(Ligne, NbrColonne, out bas, out haut, out gauche, out droite, nbrCase, bat_ordi);
-                        encodageordi(bas, haut, gauche, droite, nbrCase, Ligne, NbrColonne, bat_ordi, out ok, user);
+                        encodageordi(bas, haut, gauche, droite, nbrCase, Ligne, NbrColonne, bat_ordi, out ok, user, plan_jeu_ordi);
                     }
 
                 } while (!ok);
@@ -386,7 +386,7 @@ namespace toucher_couler
 
 
 
-        static void encodageordi(bool bas, bool haut, bool gauche, bool droite, int nbrCase, int Ligne, int NbrColonne, string[,] bat_ordi, out bool ok, string user)
+        static void encodageordi(bool bas, bool haut, bool gauche, bool droite, int nbrCase, int Ligne, int NbrColonne, string[,] bat_ordi, out bool ok, string user, string[,] plan_jeu_ordi)
         {
             ok = false;
             string[] t = { "BAS", "HAUT", "DROITE", "GAUCHE" };
@@ -438,6 +438,9 @@ namespace toucher_couler
                         {
                             bat_ordi[Ligne + i, NbrColonne] = " B";
                             if (user == "uti")
+                            {
+                                plan_jeu_ordi[Ligne + i, NbrColonne] = " B";
+                            }
                             ok = true;
                         }
                     }
@@ -451,6 +454,9 @@ namespace toucher_couler
                         {
                             bat_ordi[Ligne - i, NbrColonne] = " B";
                             if (user == "uti")
+                            {
+                                plan_jeu_ordi[Ligne - i, NbrColonne] = " B";
+                            }
                             ok = true;
                         }
                     }
@@ -464,6 +470,10 @@ namespace toucher_couler
                         for (int i = 0; i < nbrCase; i++)
                         {
                             bat_ordi[Ligne, NbrColonne - i] = " B";
+                            if (user == "uti")
+                            {
+                                plan_jeu_ordi[Ligne, NbrColonne - i] = " B";
+                            }
                             ok = true;
                         }
                     }
@@ -477,6 +487,10 @@ namespace toucher_couler
                         for (int i = 0; i < nbrCase; i++)
                         {
                             bat_ordi[Ligne, NbrColonne + i] = " B";
+                            if (user == "uti")
+                            {
+                                plan_jeu_ordi[Ligne, NbrColonne + i] = " B";
+                            }
                             ok = true;
                         }
                     }
