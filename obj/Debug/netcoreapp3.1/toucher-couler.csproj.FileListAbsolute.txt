@@ -1,0 +1,80 @@
+E:\5tti informatique Val\projet touché-coulé\code\toucher-couler\bin\Debug\netcoreapp3.1\toucher-couler.exe
+E:\5tti informatique Val\projet touché-coulé\code\toucher-couler\bin\Debug\netcoreapp3.1\toucher-couler.deps.json
+E:\5tti informatique Val\projet touché-coulé\code\toucher-couler\bin\Debug\netcoreapp3.1\toucher-couler.runtimeconfig.json
+E:\5tti informatique Val\projet touché-coulé\code\toucher-couler\bin\Debug\netcoreapp3.1\toucher-couler.runtimeconfig.dev.json
+E:\5tti informatique Val\projet touché-coulé\code\toucher-couler\bin\Debug\netcoreapp3.1\toucher-couler.dll
+E:\5tti informatique Val\projet touché-coulé\code\toucher-couler\bin\Debug\netcoreapp3.1\toucher-couler.pdb
+E:\5tti informatique Val\projet touché-coulé\code\toucher-couler\obj\Debug\netcoreapp3.1\toucher-couler.csprojAssemblyReference.cache
+E:\5tti informatique Val\projet touché-coulé\code\toucher-couler\obj\Debug\netcoreapp3.1\toucher-couler.AssemblyInfoInputs.cache
+E:\5tti informatique Val\projet touché-coulé\code\toucher-couler\obj\Debug\netcoreapp3.1\toucher-couler.AssemblyInfo.cs
+E:\5tti informatique Val\projet touché-coulé\code\toucher-couler\obj\Debug\netcoreapp3.1\toucher-couler.csproj.CoreCompileInputs.cache
+E:\5tti informatique Val\projet touché-coulé\code\toucher-couler\obj\Debug\netcoreapp3.1\toucher-couler.dll
+E:\5tti informatique Val\projet touché-coulé\code\toucher-couler\obj\Debug\netcoreapp3.1\toucher-couler.pdb
+E:\5tti informatique Val\projet touché-coulé\code\toucher-couler\obj\Debug\netcoreapp3.1\toucher-couler.genruntimeconfig.cache
+C:\Users\160646\Desktop\touche_coule\bin\Debug\netcoreapp3.1\toucher-couler.exe
+C:\Users\160646\Desktop\touche_coule\bin\Debug\netcoreapp3.1\toucher-couler.deps.json
+C:\Users\160646\Desktop\touche_coule\bin\Debug\netcoreapp3.1\toucher-couler.runtimeconfig.json
+C:\Users\160646\Desktop\touche_coule\bin\Debug\netcoreapp3.1\toucher-couler.runtimeconfig.dev.json
+C:\Users\160646\Desktop\touche_coule\bin\Debug\netcoreapp3.1\toucher-couler.dll
+C:\Users\160646\Desktop\touche_coule\bin\Debug\netcoreapp3.1\toucher-couler.pdb
+C:\Users\160646\Desktop\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.csprojAssemblyReference.cache
+C:\Users\160646\Desktop\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.AssemblyInfoInputs.cache
+C:\Users\160646\Desktop\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.AssemblyInfo.cs
+C:\Users\160646\Desktop\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.csproj.CoreCompileInputs.cache
+C:\Users\160646\Desktop\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.dll
+C:\Users\160646\Desktop\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.pdb
+C:\Users\160646\Desktop\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.genruntimeconfig.cache
+C:\Users\lemer\Desktop\deleete 2\touche_coule\bin\Debug\netcoreapp3.1\toucher-couler.exe
+C:\Users\lemer\Desktop\deleete 2\touche_coule\bin\Debug\netcoreapp3.1\toucher-couler.deps.json
+C:\Users\lemer\Desktop\deleete 2\touche_coule\bin\Debug\netcoreapp3.1\toucher-couler.runtimeconfig.json
+C:\Users\lemer\Desktop\deleete 2\touche_coule\bin\Debug\netcoreapp3.1\toucher-couler.runtimeconfig.dev.json
+C:\Users\lemer\Desktop\deleete 2\touche_coule\bin\Debug\netcoreapp3.1\toucher-couler.dll
+C:\Users\lemer\Desktop\deleete 2\touche_coule\bin\Debug\netcoreapp3.1\toucher-couler.pdb
+C:\Users\lemer\Desktop\deleete 2\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.csproj.AssemblyReference.cache
+C:\Users\lemer\Desktop\deleete 2\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lemer\Desktop\deleete 2\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.AssemblyInfoInputs.cache
+C:\Users\lemer\Desktop\deleete 2\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.AssemblyInfo.cs
+C:\Users\lemer\Desktop\deleete 2\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.csproj.CoreCompileInputs.cache
+C:\Users\lemer\Desktop\deleete 2\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.dll
+C:\Users\lemer\Desktop\deleete 2\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.pdb
+C:\Users\lemer\Desktop\deleete 2\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.genruntimeconfig.cache
+C:\Users\lemer\Desktop\deletee\touche_coule\bin\Debug\netcoreapp3.1\toucher-couler.exe
+C:\Users\lemer\Desktop\deletee\touche_coule\bin\Debug\netcoreapp3.1\toucher-couler.deps.json
+C:\Users\lemer\Desktop\deletee\touche_coule\bin\Debug\netcoreapp3.1\toucher-couler.runtimeconfig.json
+C:\Users\lemer\Desktop\deletee\touche_coule\bin\Debug\netcoreapp3.1\toucher-couler.runtimeconfig.dev.json
+C:\Users\lemer\Desktop\deletee\touche_coule\bin\Debug\netcoreapp3.1\toucher-couler.dll
+C:\Users\lemer\Desktop\deletee\touche_coule\bin\Debug\netcoreapp3.1\toucher-couler.pdb
+C:\Users\lemer\Desktop\deletee\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.csproj.AssemblyReference.cache
+C:\Users\lemer\Desktop\deletee\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lemer\Desktop\deletee\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.AssemblyInfoInputs.cache
+C:\Users\lemer\Desktop\deletee\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.AssemblyInfo.cs
+C:\Users\lemer\Desktop\deletee\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.csproj.CoreCompileInputs.cache
+C:\Users\lemer\Desktop\deletee\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.dll
+C:\Users\lemer\Desktop\deletee\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.pdb
+C:\Users\lemer\Desktop\deletee\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.genruntimeconfig.cache
+C:\Users\160646\Documents\touche_coule\bin\Debug\netcoreapp3.1\toucher-couler.exe
+C:\Users\160646\Documents\touche_coule\bin\Debug\netcoreapp3.1\toucher-couler.deps.json
+C:\Users\160646\Documents\touche_coule\bin\Debug\netcoreapp3.1\toucher-couler.runtimeconfig.json
+C:\Users\160646\Documents\touche_coule\bin\Debug\netcoreapp3.1\toucher-couler.runtimeconfig.dev.json
+C:\Users\160646\Documents\touche_coule\bin\Debug\netcoreapp3.1\toucher-couler.dll
+C:\Users\160646\Documents\touche_coule\bin\Debug\netcoreapp3.1\toucher-couler.pdb
+C:\Users\160646\Documents\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.csprojAssemblyReference.cache
+C:\Users\160646\Documents\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.AssemblyInfoInputs.cache
+C:\Users\160646\Documents\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.AssemblyInfo.cs
+C:\Users\160646\Documents\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.csproj.CoreCompileInputs.cache
+C:\Users\160646\Documents\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.dll
+C:\Users\160646\Documents\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.pdb
+C:\Users\160646\Documents\touche_coule\obj\Debug\netcoreapp3.1\toucher-couler.genruntimeconfig.cache
+C:\Users\160646\Desktop\touche_coule-main\bin\Debug\netcoreapp3.1\toucher-couler.exe
+C:\Users\160646\Desktop\touche_coule-main\bin\Debug\netcoreapp3.1\toucher-couler.deps.json
+C:\Users\160646\Desktop\touche_coule-main\bin\Debug\netcoreapp3.1\toucher-couler.runtimeconfig.json
+C:\Users\160646\Desktop\touche_coule-main\bin\Debug\netcoreapp3.1\toucher-couler.runtimeconfig.dev.json
+C:\Users\160646\Desktop\touche_coule-main\bin\Debug\netcoreapp3.1\toucher-couler.dll
+C:\Users\160646\Desktop\touche_coule-main\bin\Debug\netcoreapp3.1\toucher-couler.pdb
+C:\Users\160646\Desktop\touche_coule-main\obj\Debug\netcoreapp3.1\toucher-couler.csprojAssemblyReference.cache
+C:\Users\160646\Desktop\touche_coule-main\obj\Debug\netcoreapp3.1\toucher-couler.AssemblyInfoInputs.cache
+C:\Users\160646\Desktop\touche_coule-main\obj\Debug\netcoreapp3.1\toucher-couler.AssemblyInfo.cs
+C:\Users\160646\Desktop\touche_coule-main\obj\Debug\netcoreapp3.1\toucher-couler.csproj.CoreCompileInputs.cache
+C:\Users\160646\Desktop\touche_coule-main\obj\Debug\netcoreapp3.1\toucher-couler.dll
+C:\Users\160646\Desktop\touche_coule-main\obj\Debug\netcoreapp3.1\toucher-couler.pdb
+C:\Users\160646\Desktop\touche_coule-main\obj\Debug\netcoreapp3.1\toucher-couler.genruntimeconfig.cache
