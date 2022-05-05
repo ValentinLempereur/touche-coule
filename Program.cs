@@ -42,7 +42,7 @@ namespace toucher_couler
                 Console.WriteLine($"Bonjour {nom}, vous allez commencer une partie de touché-coulé !!\n");
                 Console.WriteLine("Vous allez encoder vos emplacements de bateau, appuie sur ENTER pour passer a la suite\n");
                 Console.ReadLine();
-                placementBateauUti(bat_uti, plan_jeu_ordi);
+                placementBateauUti(bat_uti, plan_jeu_ordi, plan_jeu_uti);
                 Console.Clear();
                 Console.WriteLine("Plusieurs navire ennemi on été détecté !!, êtes-vous prêt à les détruire");
                 Console.ReadLine();
@@ -140,7 +140,28 @@ namespace toucher_couler
             {
                 for (int j = 0; j < 11; j++)
                 {
-                    Console.Write(plan_jeu[i, j]);
+                    if (plan_jeu[i, j] == " B")
+                    {
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                        Console.Write(plan_jeu[i, j]);
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                    }
+                    else if(plan_jeu[i, j] == " X")
+                    {
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.Write(plan_jeu[i, j]);
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                    }
+                    else if (plan_jeu[i, j] == " R")
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.Write(plan_jeu[i, j]);
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                    }
+                    else
+                    {
+                        Console.Write(plan_jeu[i, j]);
+                    }
                 }
                 Console.WriteLine();
             }
@@ -149,72 +170,93 @@ namespace toucher_couler
         //-------------------------------------------------------------------
 
         //-----------------------------------quelle lettre vaut quoi ?-----------------------------------
-        static void caseselect(out int Ligne, out int NbrColonne)
+        static void caseselect(out int Ligne, out int NbrColonne, string [,] plan_jeu_uti)
         {
             string[] t = { "²", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J" };
             Ligne = 0;
             string ChoixLigne = "";
             bool ok;
-            do
-            {
-                ok = false;
-                Console.WriteLine("\nchoisisez la lettre que vous voulez séléctionner");
-                Console.ForegroundColor = ConsoleColor.Magenta;
-                ChoixLigne = Console.ReadLine().ToUpper();
-                Console.ForegroundColor = ConsoleColor.Cyan;
-
-                if (ChoixLigne == "A" || ChoixLigne == "B" || ChoixLigne == "C" || ChoixLigne == "D" || ChoixLigne == "E" || ChoixLigne == "F" || ChoixLigne == "G" || ChoixLigne == "H" || ChoixLigne == "I" || ChoixLigne == "J")
-                {
-                    ok = true;
-                }
-                else
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("\nVous pouvez seulement encoder une lettre qui est présent sur la table du jeu et seulement une lettre !!");
-                    Console.ForegroundColor = ConsoleColor.Cyan;
-                }
-            } while (!ok);
-
-
-
-            for (int i = 0; i < t.Length; i++)
-            {
-                if (ChoixLigne == t[i])
-                {
-                    Ligne = i;
-                }
-            }
-
+            bool totalok;
+            string messageeroor = "";
 
             do
             {
-                ok = false;
-                Console.WriteLine("\nchoisisez le chiffre que vous voulez séléctionner");
-                Console.ForegroundColor = ConsoleColor.Magenta;
-                if (int.TryParse(Console.ReadLine(), out NbrColonne))
+                do
                 {
+                    ok = false;
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine(messageeroor);
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine("\nchoisisez la lettre que vous voulez séléctionner");
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    ChoixLigne = Console.ReadLine().ToUpper();
+                    Console.ForegroundColor = ConsoleColor.Cyan;
 
+                    if (ChoixLigne == "A" || ChoixLigne == "B" || ChoixLigne == "C" || ChoixLigne == "D" || ChoixLigne == "E" || ChoixLigne == "F" || ChoixLigne == "G" || ChoixLigne == "H" || ChoixLigne == "I" || ChoixLigne == "J")
+                    {
+                        ok = true;
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("\nVous pouvez seulement encoder une lettre qui est présent sur la table du jeu et seulement une lettre !!");
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                    }
+                } while (!ok);
+
+
+
+                for (int i = 0; i < t.Length; i++)
+                {
+                    if (ChoixLigne == t[i])
+                    {
+                        Ligne = i;
+                    }
                 }
-                Console.ForegroundColor = ConsoleColor.Cyan;
 
-                if (NbrColonne == 1 || NbrColonne == 2 || NbrColonne == 3 || NbrColonne == 4 || NbrColonne == 5 || NbrColonne == 6 || NbrColonne == 7 || NbrColonne == 8 || NbrColonne == 9 || NbrColonne == 10)
+
+                do
                 {
-                    ok = true;
+                    ok = false;
+                    Console.WriteLine("\nchoisisez le chiffre que vous voulez séléctionner");
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    if (int.TryParse(Console.ReadLine(), out NbrColonne))
+                    {
+
+                    }
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+
+                    if (NbrColonne == 1 || NbrColonne == 2 || NbrColonne == 3 || NbrColonne == 4 || NbrColonne == 5 || NbrColonne == 6 || NbrColonne == 7 || NbrColonne == 8 || NbrColonne == 9 || NbrColonne == 10)
+                    {
+                        ok = true;
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("\nVous pouvez seulement encoder un chiffre qui est présent sur la table du jeu et seulement un chiffre !!");
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                    }
+                } while (!ok);
+
+
+                if (plan_jeu_uti[Ligne, NbrColonne] == " R" || plan_jeu_uti[Ligne, NbrColonne] == " X")
+                {
+                    messageeroor = "\nVous avez déjà tirer ici, veuillez réencoder votre tire";
+                    totalok = false;
                 }
                 else
                 {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("\nVous pouvez seulement encoder un chiffre qui est présent sur la table du jeu et seulement un chiffre !!");
-                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    totalok = true;
                 }
-            } while (!ok);
-            
 
+
+            } while (!totalok);
+                
         }
         //-----------------------------------------------------------------------------------------------
 
         //-------------------------placement bateau utilisateur-------------------------
-        static void placementBateauUti(string[,] bat_uti, string[,] plan_jeu_ordi)
+        static void placementBateauUti(string[,] bat_uti, string[,] plan_jeu_ordi, string [,] plan_jeu_uti)
         {
             string[] t = { "Porte-Avion (5 cases)", "Croisseur (4 cases)", "1 Sous-Marin (3 cases)", "2 Sous-Marin (3 cases)", "torpilleur (2 cases)"};
             int[] t2 = { 5, 4, 3, 3, 2 };
@@ -235,7 +277,7 @@ namespace toucher_couler
                 Console.Clear();
                 Console.WriteLine($"Placer votre {bateau}\n");
                 Affiche(bat_uti);
-                caseselect(out Ligne, out NbrColonne);
+                caseselect(out Ligne, out NbrColonne, plan_jeu_uti);
                 if (bat_uti[Ligne, NbrColonne] == " B")
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
@@ -569,7 +611,7 @@ namespace toucher_couler
 
             Console.Clear();
             Affiche(plan_jeu_uti);
-            caseselect(out Ligne, out NbrColonne);
+            caseselect(out Ligne, out NbrColonne, plan_jeu_uti);
             do
             {
                 if (bat_ordi[Ligne, NbrColonne] == " B")
@@ -580,7 +622,7 @@ namespace toucher_couler
                     Console.ReadLine();
                     Console.Clear();
                     Affiche(plan_jeu_uti);
-                    caseselect(out Ligne, out NbrColonne);
+                    caseselect(out Ligne, out NbrColonne, plan_jeu_uti);
                     toucher = true;
                 }
 
@@ -593,8 +635,6 @@ namespace toucher_couler
                     toucher = false;
                     Console.Clear();
                 }
-
-
             } while (toucher);
         }
         //------------------------------------------------------------------------------------------------------------------------
@@ -649,16 +689,13 @@ namespace toucher_couler
         static void asciiii()
         {
             Console.WriteLine(@"
-                                                                     o o
-                                                     o ooo
-                                                       o oo
-                                                          o o |   #)
-                                                           oo     _ | _ | _#_
-                                                             o | U505 |
-                        __                    ___________________ |       | _________________
-                       | -_______---------- -                                              \
-                      >| _____--->     )
-                       | __ - ---------_________________________________________________ /
+
+████████╗░█████╗░██╗░░░██╗░█████╗░██╗░░██╗███████╗  ░█████╗░░█████╗░██╗░░░██╗██╗░░░░░███████╗
+╚══██╔══╝██╔══██╗██║░░░██║██╔══██╗██║░░██║██╔════╝  ██╔══██╗██╔══██╗██║░░░██║██║░░░░░██╔════╝
+░░░██║░░░██║░░██║██║░░░██║██║░░╚═╝███████║█████╗░░  ██║░░╚═╝██║░░██║██║░░░██║██║░░░░░█████╗░░
+░░░██║░░░██║░░██║██║░░░██║██║░░██╗██╔══██║██╔══╝░░  ██║░░██╗██║░░██║██║░░░██║██║░░░░░██╔══╝░░
+░░░██║░░░╚█████╔╝╚██████╔╝╚█████╔╝██║░░██║███████╗  ╚█████╔╝╚█████╔╝╚██████╔╝███████╗███████╗
+░░░╚═╝░░░░╚════╝░░╚═════╝░░╚════╝░╚═╝░░╚═╝╚══════╝  ░╚════╝░░╚════╝░░╚═════╝░╚══════╝╚══════╝
                 ");
         }
 
