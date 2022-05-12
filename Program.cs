@@ -44,7 +44,7 @@ namespace toucher_couler
                 Console.ReadLine();
                 placementBateauUti(bat_uti, plan_jeu_ordi, plan_jeu_uti);
                 Console.Clear();
-                Console.WriteLine("Plusieurs navire ennemi on été détecté !!, êtes-vous prêt à les détruire");
+                Console.WriteLine("Plusieurs navires ennemi on été détecté !!, êtes-vous prêt à les détruire");
                 Console.ReadLine();
                 placementBateauordi(bat_ordi, plan_jeu_ordi);
 
@@ -55,8 +55,8 @@ namespace toucher_couler
                     {
                         Console.Clear();
                         Nexty = false;
-                        Console.WriteLine("Voulez-vous attaquer ou voire l'avancement de la bataille de votre coté ? (séléctionner un chiffre)\n");
-                        Console.WriteLine("1. Attaquer \n2. Voire un aperçu\n");
+                        Console.WriteLine("Voulez-vous attaquer ou voir l'avancement de la bataille de votre coté ? (séléctionner un chiffre)\n");
+                        Console.WriteLine("1. Attaquer \n2. Voir un aperçu\n");
                         Console.ForegroundColor = ConsoleColor.Magenta;
                         Nombre = Console.ReadLine();
                         Console.ForegroundColor = ConsoleColor.Cyan;
@@ -690,12 +690,12 @@ namespace toucher_couler
         {
             Console.WriteLine(@"
 
-████████╗░█████╗░██╗░░░██╗░█████╗░██╗░░██╗███████╗  ░█████╗░░█████╗░██╗░░░██╗██╗░░░░░███████╗
-╚══██╔══╝██╔══██╗██║░░░██║██╔══██╗██║░░██║██╔════╝  ██╔══██╗██╔══██╗██║░░░██║██║░░░░░██╔════╝
-░░░██║░░░██║░░██║██║░░░██║██║░░╚═╝███████║█████╗░░  ██║░░╚═╝██║░░██║██║░░░██║██║░░░░░█████╗░░
-░░░██║░░░██║░░██║██║░░░██║██║░░██╗██╔══██║██╔══╝░░  ██║░░██╗██║░░██║██║░░░██║██║░░░░░██╔══╝░░
-░░░██║░░░╚█████╔╝╚██████╔╝╚█████╔╝██║░░██║███████╗  ╚█████╔╝╚█████╔╝╚██████╔╝███████╗███████╗
-░░░╚═╝░░░░╚════╝░░╚═════╝░░╚════╝░╚═╝░░╚═╝╚══════╝  ░╚════╝░░╚════╝░░╚═════╝░╚══════╝╚══════╝
+████████╗░█████╗░██╗░░░██╗░█████╗░██╗░░██╗███████╗██████╗░  ░█████╗░░█████╗░██╗░░░██╗██╗░░░░░███████╗██████╗░
+╚══██╔══╝██╔══██╗██║░░░██║██╔══██╗██║░░██║██╔════╝██╔══██╗  ██╔══██╗██╔══██╗██║░░░██║██║░░░░░██╔════╝██╔══██╗
+░░░██║░░░██║░░██║██║░░░██║██║░░╚═╝███████║█████╗░░██████╔╝  ██║░░╚═╝██║░░██║██║░░░██║██║░░░░░█████╗░░██████╔╝
+░░░██║░░░██║░░██║██║░░░██║██║░░██╗██╔══██║██╔══╝░░██╔══██╗  ██║░░██╗██║░░██║██║░░░██║██║░░░░░██╔══╝░░██╔══██╗
+░░░██║░░░╚█████╔╝╚██████╔╝╚█████╔╝██║░░██║███████╗██║░░██║  ╚█████╔╝╚█████╔╝╚██████╔╝███████╗███████╗██║░░██║
+░░░╚═╝░░░░╚════╝░░╚═════╝░░╚════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝  ░╚════╝░░╚════╝░░╚═════╝░╚══════╝╚══════╝╚═╝░░╚═╝
                 ");
         }
 
